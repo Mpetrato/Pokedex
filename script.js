@@ -1,5 +1,6 @@
 const resultSearchPokemon = document.querySelector('.resultSearchPokemon');
 const inputSearch = document.querySelector('.search-pokemons input');
+const aviso = document.querySelector('.searching')
 
 
 // Procura os pokemons na api
@@ -37,7 +38,7 @@ const searchPokemonsApi = async () => {
         `
     })
 
-
+    aviso.style.display = 'none'
 }
 
 searchPokemonsApi()
