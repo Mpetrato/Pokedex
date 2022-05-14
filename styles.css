@@ -1,0 +1,147 @@
+
+/* CSS GLOBAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #212121;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Header */
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+
+}
+
+header .container-nav {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+header .nav-right ul {
+    display: flex;
+}
+
+header .nav-right ul li a {
+    color: #f6f7f9;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+/* MAIN */
+
+main .bg-section{
+    background: url(./images/pokemon-go.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 80vh;
+}
+
+
+/* SECTION POKEDEX */
+
+section.section-pokedex {
+    background-color: #f6f7f9;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-pokemons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-pokemons input {
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #21212180;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-pokemons select {
+    max-width: 200px;
+    outline: none;
+}
+
+.result-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-search span {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.resultSearchPokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.resultSearchPokemon .pokemon-card span{
+    margin: 0;
+}
+
+.pokemon-card {
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 20px;
+    width: 200px;
+}
+
+.pokemon-card img {
+    max-width: 200px;
+    margin: 20px 0px;
+}
+
+.pokemon-card .pokemon-name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pokemon-card .pokemon-weight {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pokemon-name {
+    text-transform: capitalize;
+}
